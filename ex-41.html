@@ -1,0 +1,56 @@
+<!-- یک جاوا اسکریپت برای حلقه بنویسید که از 0 تا 15 تکرار می شود. برای هر تکرار، فرد یا زوج بودن عدد فعلی را بررسی می کند و پیامی را روی صفحه نمایش می دهد -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        div {
+            background-color: aliceblue;
+            border: 1px solid navy;
+            border-radius: 5px;
+            width: 30%;
+            padding: 2%;
+            margin-left: 33%;
+            margin-top: 10vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+
+        <p onclick="output()">Display the numbers 0 to 15 and say whather it is even or odd</p>
+
+        <p id="demo"></p>
+
+    </div>
+
+    <script>
+
+        function output() {
+
+            let sum = "";
+
+            for (let i = 0; i <= 15; i++) {
+
+                if (i % 2 == 0) {
+                    sum += (i + " is even ") + '<br>';
+                } else {
+                    sum += (i + " is odd ") + '<br>';
+                }
+            }
+
+            document.getElementById("demo").innerHTML = sum;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
